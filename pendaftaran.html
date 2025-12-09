@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran Pelatihan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header class="hero">
+    <h1>Form Pendaftaran Pelatihan</h1>
+    <p>Silahkan untuk mengisi data secara lengkap dan benar</p>
+  </header>
+  
+  <nav class="nav-aesthetic">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="pendaftaran.html">Pendaftaran</a></li>
+      <li><a href="https://wa.me/62895337465653" target="_blank">Ada Kesulitan atau Pertanyaan?</a></li>
+    </ul>
+  </nav>
+  
+  <section class="card">
+    <form method="POST" class="form-aesthetic">
+      
+      <fieldset class="fieldset-modern">
+        <legend>Data Pribadi</legend>
+        
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama" required>
+        
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="jk" value="laki"> Laki-laki</label>
+          <label><input type="radio" name="jk" value="perempuan"> Perempuan</label>
+        </div>
+        
+        <label>Minat Pelatihan:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="minat" value="web"> Web Development</label>
+                <label><input type="checkbox" name="minat" value="bot"> Bot Engineer</label>
+            </div>
+            
+            <label>Pilih Kelas:</label>
+            <select name="kelas" required>
+              <option value="">-- Select Class --</option>
+              <option value="pagi">Pagi</option>
+              <option value="siang">Siang</option>
+              <option value="malam">Malam</option>
+            </select>
+            
+            <label>Alamat:</label>
+            <textarea name="alamat" rows="3"></textarea>
+            
+            <button type="submit" class="btn-submit">Daftar Sekarang</button>
+        
+      </fieldset>
+      
+    </form>
+  </section>
+  
+  <footer>
+    <address>Hubungi: admin@dcaesariodewandaru.com</address>
+  </footer>
+  
+</body>
+</html>
